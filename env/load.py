@@ -1,7 +1,7 @@
 import json
 import os
 
-def load(ruta_json='env\params.json'):
+def load(ruta_json='env/params.json'):
     with open(ruta_json, 'r') as archivo_json:
         config = json.load(archivo_json)
         return config

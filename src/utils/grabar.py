@@ -7,7 +7,7 @@ def grabar():
     stop= True
     audio = pyaudio.PyAudio()
     #datos genericos (no tocar)
-    stream = audio.open(channels=1, rate=44100, input=True, format=pyaudio.paInt16, frames_per_buffer=1024)
+    stream = audio.open(channels=2, rate=48000, input=True, format=pyaudio.paInt16, frames_per_buffer=1024)
     frame= []
     try:
         while stop:
@@ -23,9 +23,9 @@ def grabar():
     audio.terminate()
     
     file = wave.open("./src/temp/input/record.wav",'wb')
-    file.setnchannels(1)
+    file.setnchannels(2)
     file.setsampwidth(audio.get_sample_size(pyaudio.paInt16))
-    file. setframerate(44100)
+    file. setframerate(48000)
     file.writeframes(b''.join(frame))
     file.close()
 

@@ -3,7 +3,7 @@ import src.utils.hablar as talk
 import src.utils.procesarTexto as think
 import src.utils.grabar as listen
 
-import env.loadParameters as pmts
+import env.load as pmts
 
 import keyboard
 import time
@@ -16,12 +16,12 @@ if __name__ == "__main__":
     
     modelo = write.cargar_modelo(parameters['MODELO'])
     voz = talk.createVoice(parameters['RATE'], parameters['VOLUME'])
-    
+    nlp = think.crearProcessing()
 
     while True: 
         time.sleep(0.1)
         if keyboard.is_pressed('space') and keyboard.is_pressed('m'):
-           
+            # TODO: Quitar en producción
             print("inicio a hablar")
             listen.grabar()
         else:
@@ -29,6 +29,9 @@ if __name__ == "__main__":
             if os.path.exists(parameters['RUTA']):
                 texto_transcrito = write.transcribir_audio(modelo, parameters['RUTA'])
                 print(texto_transcrito)
+                
+                instruccion = think.startProcess(nlp, texto_transcrito)
+                print(instruccion)
                 os.remove(parameters['RUTA'])
             else:
                 pass

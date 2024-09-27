@@ -5,7 +5,7 @@ def cargar_modelo(MODELO='small'):
     modelo = whisper.load_model(MODELO, )  
     return modelo
 
-def transcribir_audio(modelo, archivo_audio,  LANGUAGE= 'spanish', FP16=False):
+def transcribir_audio(modelo, archivo_audio,  LANGUAGE= 'Spanish', FP16=False):
     resultado = modelo.transcribe(archivo_audio, language= LANGUAGE, fp16 = FP16)
     return resultado['text']
 

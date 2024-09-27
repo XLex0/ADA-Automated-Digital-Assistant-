@@ -1,5 +1,5 @@
 {
-    "MODELO": "small",
+    "MODELO": "medium",
     "RATE":1,
     "VOLUME": 1,
     "RUTA": "./src/temp/input/record.wav"
