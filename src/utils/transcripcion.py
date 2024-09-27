@@ -15,7 +15,7 @@ if __name__ == "__main__":
     modelo = cargar_modelo()
     
     # Especificar el archivo de audio a transcribir
-    archivo_audio = r".\src\temp\input\Grabación.wav"  # Cambia esto por tu ruta de archivo
+    archivo_audio = r".\src\temp\input\record.wav"  # Cambia esto por tu ruta de archivo
     texto_transcrito = transcribir_audio(modelo, archivo_audio)
     
     # Mostrar el texto transcrito

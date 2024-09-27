@@ -22,7 +22,7 @@ def grabar():
     stream.close()
     audio.terminate()
     
-    file = wave.open("recording.wav",'wb')
+    file = wave.open("./src/temp/input/record.wav",'wb')
     file.setnchannels(1)
     file.setsampwidth(audio.get_sample_size(pyaudio.paInt16))
     file. setframerate(44100)
