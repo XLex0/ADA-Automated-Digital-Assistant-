@@ -2,3 +2,4 @@ venv
 src/temp/input/*
 src/temp/output/*
 **/__pycache__/
+env/instructions.json

@@ -15,7 +15,11 @@ serves as the activation word, similar to "Alexa" or "Hey Google."
 0.1.2 beta (prometeus)
 
 #### The actual version is not finished yet
-The actual version has the capacity to transcribe voice to text is the base of the assistant
+The actual version has the capacity to transcribe voice to text is the base of the assistant also is incorporated 
+the lemmatization and deletion of stopwords
+
+#### rename instructionscopy.json --> instructions.json 
+Rename and configure with your own properties
 
 
 ### Requires

@@ -1,0 +1,7 @@
+{
+    "poder": {
+        "abrir":{
+            "word":"ruta del archivo para ejecutar word"
+        }
+    }
+}
