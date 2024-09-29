@@ -2,7 +2,7 @@ import src.utils.transcripcion as write
 import src.utils.hablar as talk
 import src.utils.procesarTexto as think
 import src.utils.grabar as listen
-
+import src.controller as exec
 import env.load as pmts
 
 import keyboard
@@ -13,6 +13,7 @@ import os
 if __name__ == "__main__":
     
     parameters = pmts.load() # cargamos los parámetros 
+    instructions = pmts.load(parameters['INSTRUCTION_PATH']) # cargamos las instrucciones
     
     modelo = write.cargar_modelo(parameters['MODELO'])
     voz = talk.createVoice(parameters['RATE'], parameters['VOLUME'])
@@ -32,7 +33,15 @@ if __name__ == "__main__":
                 
                 instruccion = think.startProcess(nlp, texto_transcrito)
                 print(instruccion)
+                print(type(instruccion))
+                
+                message = exec.ejecutarComando(instruccion, instructions, texto_transcrito)
+                
+                talk.hablar(voz, message)
+                
                 os.remove(parameters['RUTA'])
+                
+
             else:
                 pass
 

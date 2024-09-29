@@ -1,7 +1,7 @@
 import os
-import load as inst
 
-def openF(ruta):
+
+def openF(ruta,original):
     try:
         os.startfile(ruta)
     except Exception as e:
@@ -9,14 +9,5 @@ def openF(ruta):
         
 
 if __name__=='__main__':
-    instruction = inst.load("./env/instructions.json")
-    
-    try:
-        openF(instruction['poder']['abrir']['wo'])
-        
-    except KeyError:
-        print('error Key not valid')
-        
-else:
     pass
-    
+        

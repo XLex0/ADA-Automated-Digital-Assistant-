@@ -1,6 +1,7 @@
 {
     "MODELO": "medium",
-    "RATE":1,
+    "RATE":135,
     "VOLUME": 1,
-    "RUTA": "./src/temp/input/record.wav"
+    "RUTA": "./src/temp/input/record.wav",
+    "INSTRUCTION_PATH":"./env/instructions.json"
 }

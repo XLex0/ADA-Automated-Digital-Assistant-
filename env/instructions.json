@@ -1,7 +1,35 @@
 {
     "poder": {
         "abrir":{
-            "word":""
-        }
-    }
+
+            "word":["Abriendo Word","\"C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Word.lnk\""],
+            "excel":["Abriendo Excel","\"C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Excel.lnk\""],
+            "brave":["Abriendo Brave","\"C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Brave.lnk\""],
+            "chrome":["Abriendo Google Chrome","\"C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Google Chrome.lnk\""],
+            "powerpoint":["Abriendo Power Point","\"C:/ProgramData/Microsoft/Windows/Start Menu/Programs/PowerPoint.lnk\""],
+            "gdevelop":["Abriendo G develop","\"C:/ProgramData/Microsoft/Windows/Start Menu/Programs/GDevelop 5.lnk\""],
+            "gimp":["Abriendo Gimp","\"C:/ProgramData/Microsoft/Windows/Start Menu/Programs/GIMP 2.10.38.lnk\""],
+            "staruml":["Abriendo Star UML","\"C:/ProgramData/Microsoft/Windows/Start Menu/Programs/StarUML.lnk\""],
+            "steam":["Abriendo Steam","\"C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Steam/Steam.lnk\""],
+            "edge":["Abriendo Edge","\"C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Microsoft Edge.lnk\""],
+            "base": "from src.instruction.abrir import openF; openF(",
+            "error": "Error encontrado en comando abrir"
+        },
+        "ingresar":{
+            "youtube":{
+                "buscar":["buscando en Youtube","\"https://www.youtube.com/results?search_query=\",0"],
+                "base":"",
+                "default": ["ingresando a Youtube","\"https://www.youtube.com\",1"],
+                "error": "Error encontrado en comando ingresar, youtube"
+            },
+            "base": "from src.instruction.ingresar import select; select(",
+            "error": "Error encontrado en comando ingresar"
+
+        },
+        "base": "",
+        "error": "Error encontrado en comando poder"
+    },
+    "base": "",
+    "error": "Error encontrado en comando poder"
 }
+ 

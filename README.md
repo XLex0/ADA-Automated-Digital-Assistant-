@@ -12,14 +12,14 @@ serves as the activation word, similar to "Alexa" or "Hey Google."
 
 
 ### VERSION:
-0.1.2 beta (prometeus)
+1.0.1 beta (Atlas)
 
-#### The actual version is not finished yet
-The actual version has the capacity to transcribe voice to text is the base of the assistant also is incorporated 
-the lemmatization and deletion of stopwords
+#### The actual version has few functionalities
+The actual version has the capacity of do actions with a voice instruction.
+Nowadays only can open programs and search in youtube, in next versions, we're going to add more functions
 
-#### rename instructionscopy.json --> instructions.json 
-Rename and configure with your own properties
+#### instructions.json 
+Configure with your own properties and paths
 
 
 ### Requires
@@ -29,4 +29,5 @@ Rename and configure with your own properties
 - use `pip install -r requirements.txt` to install dependencies
 
 ### Historial
-0.1.1 prometeus
+0.1.1-3 prometeus
+1.0.1   Atlas
