@@ -22,6 +22,12 @@
                 "default": ["ingresando a Youtube","\"https://www.youtube.com\",1"],
                 "error": "Error encontrado en comando ingresar, youtube"
             },
+            "google":{
+                "buscar":["buscando en Google","\"https://www.google.com/search?q=\",0"],
+                "base":"",
+                "default": ["ingresando a Google","\"https://www.google.com\",1"],
+                "error": "Error encontrado en comando ingresar, google"
+            },
             "base": "from src.instruction.ingresar import select; select(",
             "error": "Error encontrado en comando ingresar"
 

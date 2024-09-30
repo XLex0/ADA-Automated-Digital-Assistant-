@@ -15,7 +15,7 @@ serves as the activation word, similar to "Alexa" or "Hey Google."
 1.0.1 beta (Atlas)
 
 #### The actual version has few functionalities
-The actual version has the capacity of do actions with a voice instruction.
+The actual version has the capacity of doing actions with a voice instruction.
 Nowadays only can open programs and search in youtube, in next versions, we're going to add more functions
 
 #### instructions.json 
@@ -30,4 +30,5 @@ Configure with your own properties and paths
 
 ### Historial
 0.1.1-3 prometeus
+
 1.0.1   Atlas
