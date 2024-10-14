@@ -11,7 +11,6 @@ def select(url,buscar,original):
         
         url = url+parametro
     time.sleep(0.1)
-    print("se busca:",url)
     os.system(f'start {url}')
 
 

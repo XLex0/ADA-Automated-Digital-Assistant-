@@ -12,16 +12,18 @@ serves as the activation word, similar to "Alexa" or "Hey Google."
 
 
 ### VERSION:
-1.0.1 beta (Atlas)
+1.0.2 beta (Atlas)
 
 #### The actual version has few functionalities
 The actual version has the capacity of doing actions with a voice instruction.
-Nowadays only can open programs and search in youtube, in next versions, we're going to add more functions
+Nowadays only can open programs and search in youtube and google and check net, in next versions, we're going to add more functions
 
 #### instructions.json 
 Configure with your own properties and paths
 
-
+#### test.py 
+(ADDED in 1.0.2)
+Is a script to test the new features without voice
 ### Requires
 - ffmpeg (for install ffmpeg use choco)
 `choco install ffmpeg`
@@ -31,4 +33,4 @@ Configure with your own properties and paths
 ### Historial
 0.1.1-3 prometeus
 
-1.0.1   Atlas
+1.0.2   Atlas

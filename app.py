@@ -3,6 +3,7 @@ import src.utils.hablar as talk
 import src.utils.procesarTexto as think
 import src.utils.grabar as listen
 import src.controller as exec
+from src.instruction.verificar import conexion
 import env.load as pmts
 
 import keyboard
@@ -18,6 +19,9 @@ if __name__ == "__main__":
     modelo = write.cargar_modelo(parameters['MODELO'])
     voz = talk.createVoice(parameters['RATE'], parameters['VOLUME'])
     nlp = think.crearProcessing()
+    
+    if(conexion()):
+        pass
 
     while True: 
         time.sleep(0.1)

@@ -32,6 +32,11 @@
             "error": "Error encontrado en comando ingresar"
 
         },
+        "verificar":{
+            "red":["verificando Conexion","\"red\""],
+            "base": "from src.instruction.verificar import check; check(",
+            "error": "Error encontrado en comando ingresar"
+        },
         "base": "",
         "error": "Error encontrado en comando poder"
     },

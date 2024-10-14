@@ -61,8 +61,9 @@ def ejecutarComando(query, diccionario,original):
     )   
             print("Salida estándar:")
             print(result.stdout)
+            
+            
 
-            # Imprimir los errores estándar (si los hay)
             if result.stderr:
                 print("Errores:")
                 print(result.stderr)
