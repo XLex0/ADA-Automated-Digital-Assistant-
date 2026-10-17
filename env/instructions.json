@@ -15,6 +15,11 @@
             "base": "from src.instruction.abrir import openF; openF(",
             "error": "Error encontrado en comando abrir"
         },
+        "preguntar":{
+            "default": ["consultando","from src.instruction.preguntar import consulta; consulta(1"],            "base": "",
+            "error": "Error encontrado en comando Preguntar"
+
+        },
         "ingresar":{
             "youtube":{
                 "buscar":["buscando en Youtube","\"https://www.youtube.com/results?search_query=\",0"],
@@ -39,6 +44,7 @@
         },
         "base": "",
         "error": "Error encontrado en comando poder"
+        
     },
     "base": "",
     "error": "Error encontrado en comando poder"

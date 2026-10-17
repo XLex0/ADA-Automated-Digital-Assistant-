@@ -6,6 +6,7 @@ import src.controller as exec
 from src.instruction.verificar import conexion
 import env.load as pmts
 
+import google.generativeai as genai
 import keyboard
 import time
 import os
